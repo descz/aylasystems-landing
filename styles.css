@@ -76,6 +76,15 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+input,
+select,
+textarea {
+  -webkit-user-select: text;
+  user-select: text;
 }
 
 body::before {
@@ -1609,7 +1618,6 @@ input[type="range"]::-moz-range-thumb {
 .legal-note {
   margin-top: 36px;
   padding-top: 20px;
-  border-top: 1px solid var(--line);
   font-size: 0.72rem !important;
 }
 
