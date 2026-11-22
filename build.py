@@ -573,7 +573,7 @@ DEMO = """
       <div class="split-copy reveal">
         <span class="kicker">Receber o teste</span>
         <h2>Quero testar no meu WhatsApp.</h2>
-        <p>Preencha os dados. O envio abre seu aplicativo de e-mail com a mensagem pronta para business@aylasystems.com.</p>
+        <p>Preencha os dados. A equipe recebe seu contato e responde pelo WhatsApp informado.</p>
         <ul class="checklist">
           <li>Demonstração gratuita</li>
           <li>Sem reunião e sem instalação</li>
