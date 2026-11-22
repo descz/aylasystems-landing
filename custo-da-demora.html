@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayla Systems - Custo da demora</title>
+<meta name="description" content="Calcule quanto a demora no atendimento custa por mês e veja onde o dinheiro vaza no WhatsApp da sua empresa.">
+<link rel="canonical" href="https://aylasystems.com/custo-da-demora">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Ayla Systems">
+<meta property="og:title" content="Ayla Systems - Custo da demora">
+<meta property="og:description" content="Calcule quanto a demora no atendimento custa por mês e veja onde o dinheiro vaza no WhatsApp da sua empresa.">
+<meta property="og:url" content="https://aylasystems.com/custo-da-demora">
+<meta property="og:image" content="https://aylasystems.com/assets/icon-512.png">
+<meta name="theme-color" content="#08090b">
+<link rel="icon" href="/assets/favicon.ico" sizes="any">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32.png">
+<link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48.png">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="preload" href="/assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/styles.css?v=b3f52405b1">
+<script async src="https://www.googletagmanager.com/gtm.js?id=GTM-W75SXPVL"></script>
+<script src="/analytics.js?v=431a092143" defer></script>
+<script src="/script.js?v=931541720b" defer></script>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W75SXPVL" height="0" width="0" style="display:none;visibility:hidden" title="Google Tag Manager"></iframe></noscript>
+<a class="skip-link" href="#main">Pular para o conteúdo</a>
+<div class="progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="/" aria-label="Ayla Systems, página inicial">
+      <img class="brand-mark" src="/assets/logo-header.png?v=b3f52405b1" alt="" width="18" height="18">
+      <span class="brand-type">AYLA<span>SYSTEMS</span></span>
+    </a>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="siteNav" aria-label="Abrir menu">
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" id="siteNav" aria-label="Navegação principal">
+        <a href="/custo-da-demora" class="is-active" aria-current="page" data-label="Custo"><span>Custo</span></a>
+        <a href="/mecanica" data-label="Como funciona"><span>Como funciona</span></a>
+        <a href="/segmentos" data-label="Segmentos"><span>Segmentos</span></a>
+        <a href="/demonstracao" data-label="Demonstração"><span>Demonstração</span></a>
+        <a class="btn btn-primary btn-small nav-cta" href="/demonstracao">Testar a Ayla</a>
+    </nav>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero">
+  <div class="container">
+    <span class="kicker reveal">Diagnóstico</span>
+    <h1 class="reveal">Quanto custa deixar um cliente esperando?</h1>
+    <p class="lead reveal">O prejuízo não aparece no extrato. Ele aparece na agenda vazia e no anúncio que parece caro.</p>
+  </div>
+</section>
+
+<section class="section section-tight">
+  <div class="container">
+    <div class="calculator reveal">
+      <div class="calc-controls">
+        <h2>Faça a conta do seu mês.</h2>
+        <p>Ajuste os três números. A simulação usa apenas o que você informar.</p>
+        <div class="calc-field">
+          <div class="calc-label"><label for="lostContacts">Contatos perdidos por mês</label><output id="lostContactsOut" for="lostContacts">40</output></div>
+          <input type="range" id="lostContacts" min="10" max="200" step="5" value="40" data-calc="contacts">
+        </div>
+        <div class="calc-field">
+          <div class="calc-label"><label for="avgTicket">Ticket médio</label><output id="avgTicketOut" for="avgTicket">R$ 800</output></div>
+          <input type="range" id="avgTicket" min="200" max="5000" step="50" value="800" data-calc="ticket">
+        </div>
+        <div class="calc-field">
+          <div class="calc-label"><label for="recoveryRate">Taxa de recuperação com a Ayla</label><output id="recoveryRateOut" for="recoveryRate">40%</output></div>
+          <input type="range" id="recoveryRate" min="20" max="80" step="5" value="40" data-calc="rate">
+        </div>
+      </div>
+      <div class="calc-result" aria-live="polite">
+        <span class="kicker">Receita recuperável</span>
+        <strong id="calcMonth">R$ 12.800</strong>
+        <span class="calc-period">por mês</span>
+        <div class="calc-year"><span id="calcYear">R$ 153.600</span> em 12 meses</div>
+        <p class="calc-note">Simulação com taxa de recuperação de <span id="calcRateLabel">40%</span>. Não é promessa de resultado.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">As três falhas</span>
+      <h2>Onde o dinheiro vaza.</h2>
+      <p>Não é falta de lead. É falta de resposta no momento em que o lead está pronto.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="card card-problem reveal">
+        <span class="card-metric">Segundos</span>
+        <h3>Resposta lenta</h3>
+        <p>Cada minuto de espera esfria o contato. A Ayla responde no mesmo instante, antes que ele procure outra empresa.</p>
+      </article>
+      <article class="card card-problem reveal">
+        <span class="card-metric">24/7</span>
+        <h3>Vácuo noturno</h3>
+        <p>À noite e nos fins de semana, o contato chega e ninguém responde. A Ayla atende e qualifica fora do expediente.</p>
+      </article>
+      <article class="card card-problem reveal">
+        <span class="card-metric">Sem fila</span>
+        <h3>Recepção sobrecarregada</h3>
+        <p>Horário, preço, endereço e convênio consomem o expediente. A Ayla assume essas respostas e libera a equipe.</p>
+      </article>
+    </div>
+    <p class="note reveal">Referências de mercado usadas para dimensionar o problema. Resultados variam por operação.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="kicker">Antes e depois</span>
+      <h2>A diferença está no primeiro minuto.</h2>
+    </div>
+    <div class="grid grid-2">
+      <article class="card card-compare reveal">
+        <span class="compare-tag">Sem a Ayla</span>
+        <ul class="compare-list">
+          <li>O contato das 22h fica para amanhã.</li>
+          <li>A triagem depende de quem está na recepção.</li>
+          <li>O horário é confirmado por telefone, depois.</li>
+          <li>Os dados ficam espalhados em papel e planilha.</li>
+        </ul>
+      </article>
+      <article class="card card-compare card-compare-good reveal">
+        <span class="compare-tag">Com a Ayla</span>
+        <ul class="compare-list">
+          <li>Resposta em segundos, a qualquer hora.</li>
+          <li>Triagem padronizada com as suas regras.</li>
+          <li>Horário bloqueado na agenda na hora.</li>
+          <li>Um registro único por atendimento.</li>
+        </ul>
+      </article>
+    </div>
+    <div class="center reveal"><a class="btn btn-primary btn-large" href="/demonstracao">Testar a Ayla no WhatsApp</a></div>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <a class="brand" href="/" aria-label="Ayla Systems, página inicial">
+        <img class="brand-mark" src="/assets/logo-header.png?v=b3f52405b1" alt="" width="38" height="38">
+        <span class="brand-type">AYLA<span>SYSTEMS</span></span>
+      </a>
+      <p>Triagem, qualificação e agendamento no WhatsApp oficial. Atendimento 24/7 para empresas locais.</p>
+      <a class="footer-mail" href="mailto:business@aylasystems.com">business@aylasystems.com</a>
+    </div>
+    <div class="footer-col">
+      <h2>Plataforma</h2>
+      <a href="/custo-da-demora">Custo da demora</a>
+      <a href="/mecanica">Como funciona</a>
+      <a href="/demonstracao">Demonstração</a>
+      <a href="/segmentos">Segmentos</a>
+    </div>
+    <div class="footer-col">
+      <h2>Segurança e legal</h2>
+      <a href="/lgpd">LGPD</a>
+      <a href="/seguranca">Segurança</a>
+      <a href="/termos">Termos de uso</a>
+      <a href="/privacidade">Privacidade</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <span>© 2026 Ayla Systems. Todos os direitos reservados.</span>
+    <span>LGPD · Lei nº 13.709/2018</span>
+  </div>
+</footer>
+</body>
+</html>
